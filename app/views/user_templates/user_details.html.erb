@@ -1,4 +1,4 @@
-<h1><%= @user.username %></h1>
+<h1><%= @user.username.capitalize %></h1>
 
 <dl>
   <dt>ID</dt>
@@ -8,7 +8,7 @@
   <dd>
     <form action="/update_user/<%= @user.id %>" >
       <label for="browser_username">Username</label>
-      <input id="browser_username" type="text" name="query_username" placeholder="Enter a username..." value="<%= @user.username %>">
+      <input id="browser_username" type="text" name="query_username" placeholder="Enter a username..." value="<%= @user.username.capitalize %>">
 
       <button>Update user</button>
     </form>
